@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090b" />
+    <title>Code Multiverse | Mentorship with Kapil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Code Multiverse home"><span class="brand-mark">K.</span><span>CODE <i>MULTIVERSE</i></span></a>
+      <nav id="mainNav" aria-label="Main navigation"><a href="#path">Learning path</a><a href="#notes">Notes library</a><a href="#patterns">Pattern studio</a><a href="#practice">Practice lab</a></nav>
+      <div class="header-right"><span class="live"><b></b> LIVE <time id="liveTime"></time></span><button class="icon-button" id="menuBtn" aria-label="Open menu">☰</button></div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">01 / THE ENGINEERING APPRENTICESHIP</p>
+          <h1>Build the <em>mindset</em><br />that ships.</h1>
+          <p class="hero-text">A deliberate programming & DSA mentorship for engineers who want clarity under pressure - from first logic to FAANG-standard interviews.</p>
+          <div class="hero-actions"><button class="primary" id="beginBtn">Begin your journey <span>↗</span></button><a class="text-link" href="#path">Explore the curriculum <span>↓</span></a></div>
+          <div class="hero-proof"><div><strong>11</strong><span>mastery levels</span></div><div><strong>275+</strong><span>curated challenges</span></div><div><strong>FAANG</strong><span>interview rubric</span></div></div>
+        </div>
+        <div class="hero-art hero-banner" aria-label="Kapil, Knowledge Multiverse Architect">
+          <img class="kapil-banner" src="assets/kapil-banner.png" alt="Kapil, Knowledge Multiverse Architect" />
+          <div class="banner-shade"></div>
+          <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="core"><span>&lt;/&gt;</span><small>BUILD<br />WITH INTENT</small></div>
+          <div class="floating-card fc-one"><span>01</span><strong>Think<br />in patterns</strong></div>
+          <div class="floating-card fc-two"><span>∞</span><strong>Practice.<br />Reflect. Repeat.</strong></div>
+          <div class="spark s1">✦</div><div class="spark s2">✦</div><div class="spark s3">✦</div>
+        </div>
+      </section>
+
+      <section class="mentor-note"><p class="eyebrow">A NOTE FROM KAPIL</p><blockquote>“Coding is not about memorising answers. It is the craft of turning uncertainty into a <em>clear next step.</em>”</blockquote><div class="mentor-sign"><span>Kapil</span><small>KNOWLEDGE MULTIVERSE ARCHITECT</small></div></section>
+
+      <section class="dashboard" id="journey">
+        <div class="dashboard-top"><div><p class="eyebrow">YOUR COMMAND CENTRE</p><h2>Good evening, <span id="learnerName">Learner</span>.</h2></div><button class="ghost" id="editName">Edit profile</button></div>
+        <div class="metric-grid"><article><span>Current altitude</span><strong id="altitude">Ground Zero</strong><small>Start your first lesson</small></article><article><span>Journey progress</span><strong id="progressNumber">0%</strong><div class="progress"><i id="progressBar"></i></div></article><article><span>Next orbit</span><strong id="nextOrbit">Programming Fundamentals</strong><small>Level 01 · 12 lessons</small></article><article class="streak"><span>Focus streak</span><strong>00 <small>days</small></strong><button id="markFocus">Mark today focused</button></article></div>
+      </section>
+
+      <section class="path-section" id="path"><div class="section-heading"><div><p class="eyebrow">THE CURRICULUM</p><h2>Eleven levels.<br /><em>One formidable you.</em></h2></div><p>Move from language fluency to systems thinking. Every level pairs short notes with deliberate practice, review, and real interview signals.</p></div><div class="level-list" id="levelList"></div></section>
+
+      <section class="notes-section" id="notes"><div class="section-heading"><div><p class="eyebrow">THE COMPLETE NOTES LIBRARY</p><h2>Every concept.<br /><em>Plainly explained.</em></h2></div><p>Short, interview-ready notes for every topic in the mentorship. Select a level to reveal learner notes, mental models, and practical cues.</p></div><div class="notes-shell"><div class="note-tabs" id="noteTabs" aria-label="Select a curriculum module"></div><article class="note-reading"><div class="note-reading-top"><span id="noteLevel">LEVEL 01</span><span id="noteCount">12 TOPICS</span></div><h3 id="noteTitle">Programming Fundamentals</h3><p id="noteIntro"></p><div class="topic-notes" id="topicNotes"></div></article></div></section>
+      <section class="pattern-section" id="patterns"><div class="section-heading"><div><p class="eyebrow">THE PATTERN STUDIO</p><h2>36 ways to<br /><em>see a problem.</em></h2></div><p>Choose a pattern to see its cue, method, and a compact visual. These are reusable thinking tools - not answers to memorise.</p></div><div class="pattern-studio"><div class="pattern-grid" id="patternGrid"></div><aside class="pattern-detail"><p class="eyebrow" id="patternNo">PATTERN 01</p><h3 id="patternTitle">Two Pointers</h3><p id="patternWhen"></p><div class="pattern-visual" id="patternVisual" aria-label="Pattern visualization"></div><div class="pattern-steps"><div><b>LOOK FOR</b><span id="patternCue"></span></div><div><b>MOVE</b><span id="patternMove"></span></div><div><b>COMPLEXITY</b><span id="patternComplexity"></span></div></div></aside></div></section>
+      <section class="practice-section" id="practice"><div class="section-heading"><div><p class="eyebrow">THE PRACTICE LAB</p><h2>Write. Run.<br /><em>Reason.</em></h2></div><p>Use the IDE-style workspace to build the habit hiring panels look for: explain your approach before you code.</p></div><div class="lab"><aside class="problem-panel"><div class="lab-label">TODAY'S CHALLENGE <span>MEDIUM</span></div><h3>Two Sum</h3><p>Given an integer array and a target, return the indexes of two numbers that add to the target.</p><div class="constraint"><b>Signal to practice</b><span>Trade O(n²) brute force for O(n) lookup using a hash map.</span></div><div class="test-case"><small>EXAMPLE</small><code>nums = [2, 7, 11, 15]<br />target = 9<br /><b>output = [0, 1]</b></code></div><div class="chips"><span>Arrays</span><span>Hashing</span><span>Interview core</span></div></aside><div class="ide"><div class="ide-top"><div class="dots"><i></i><i></i><i></i></div><span>solution.js</span><span class="ide-status">JavaScript ▾</span></div><div class="code-area" contenteditable="true" spellcheck="false" id="editor"><span class="line"><i>1</i><b>function</b> twoSum(nums, target) {</span><span class="line"><i>2</i>  <b>const</b> seen = <b>new</b> Map();</span><span class="line"><i>3</i>  <b>for</b> (<b>let</b> i = 0; i &lt; nums.length; i++) {</span><span class="line"><i>4</i>    <b>const</b> need = target - nums[i];</span><span class="line"><i>5</i>    <b>if</b> (seen.has(need)) <b>return</b> [seen.get(need), i];</span><span class="line"><i>6</i>    seen.set(nums[i], i);</span><span class="line"><i>7</i>  }</span><span class="line"><i>8</i>}</span></div><div class="ide-bottom"><span id="runStatus">Ready when you are.</span><button class="run" id="runCode">▶ Run solution</button></div></div></div></section>
+
+      <section class="assessment-section" id="assessments"><div class="assessment-copy"><p class="eyebrow">PROVE YOUR READINESS</p><h2>Pressure reveals<br /><em>preparation.</em></h2><p>Practice in the conditions that matter. Our rubric rewards reasoning, edge cases, clean code, and clear communication - not just passing tests.</p><button class="primary" id="assessmentBtn">Take a diagnostic <span>↗</span></button></div><div class="assessment-cards"><article><span class="card-number">01</span><p>Weekly mock</p><h3>45-minute<br />coding sprint</h3><small>Pattern recall · test design · speed</small></article><article class="featured"><span class="card-number">02</span><p>Final assessment</p><h3>FAANG-style<br />interview loop</h3><small>DSA · CS fundamentals · project defense</small></article><article><span class="card-number">03</span><p>Evidence of growth</p><h3>Verified<br />certificate</h3><small>Unlock after level 11 + final assessment</small></article></div></section>
+
+      <section class="faqs"><div><p class="eyebrow">PLACEMENT FAQS</p><h2>Ask the questions<br /><em>that move you.</em></h2></div><div class="faq-list" id="faqList"></div></section>
+
+      <section class="final-cta"><p class="eyebrow">YOUR FIRST COMMITMENT</p><h2>The next version of you<br />starts with <em>one problem.</em></h2><button class="primary" id="finalBegin">Enter the multiverse <span>↗</span></button></section>
+    </main>
+    <footer><div class="brand"><span class="brand-mark">K.</span><span>CODE <i>MULTIVERSE</i></span></div><p>Programming with DSA Mentorship by Kapil - Knowledge Multiverse Architect.</p><p>© <span id="year"></span> Code Multiverse. All rights reserved.</p></footer>
+    <div class="modal" id="onboardModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" id="closeModal" aria-label="Close">×</button><p class="eyebrow">WELCOME, BUILDER</p><h2>What should we call you?</h2><p>This is your personal engineering journey. Your progress, levels, and wins will live here.</p><label for="nameInput">YOUR NAME</label><input id="nameInput" maxlength="30" placeholder="e.g. Aanya" /><button class="primary" id="saveName">Start my journey <span>↗</span></button></div></div>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
